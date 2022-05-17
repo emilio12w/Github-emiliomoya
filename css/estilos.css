@@ -1,0 +1,342 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px){
+    .gridContainer{
+        display: grid;
+        grid-template-areas: "header header header" "main main main" "footer footer footer"; 
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .header__navegacion {
+        background-color: rgb(20, 212, 30);
+        padding: 5px;
+        margin: 5px;
+    }
+    .header{
+        grid-area: header;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    li {
+        display: inline;
+    
+    }
+    
+    .portada__principal {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .destacado {
+        background-color: rgb(247, 144, 26);
+        text-align: center;
+    }
+    
+    .destaca {
+        background-color: rgb(247, 144, 26);
+        text-align: center;
+    }
+    
+    .productos {
+        display: flex;
+    }
+    
+    .product {
+        display: flex;
+    }
+    
+    .image {
+        flex: 33.33%;
+        padding: 5px;
+        border: 10px solid rgb(20, 212, 30);
+    }
+    
+    .masProductos__boton {
+        padding: 5px;
+        margin: 5px;
+        border: 5px;
+    
+    }
+    
+    .direccio {
+        background-color: blue;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Fira Sans', sans-serif;
+        margin: 0;
+    }
+    
+    a {
+        color: white;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background: rgb(20, 212, 30);
+        padding: 20px 5px;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    a:hover {
+        background: rgba(39, 238, 13, 0.75);
+    }
+    
+    .main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 3em 1.5em;
+        grid-area: main;
+    }
+    
+    .navigation ul {
+        border: 1px solid rgb(20, 212, 30);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .navigation li {
+        flex-grow: 1;
+        flex: 3;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+            nav ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    
+    .logo img {
+        width: 150px;
+        vertical-align: middle;
+    
+    }
+    
+    .logo {
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical
+    }
+    
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    
+    .footer {
+        background: rgba(39, 238, 13, 0.75);
+        grid-area: footer;
+    }
+}
+
+
+/* vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .gridContainer{
+    display: grid;
+    grid-template-areas: "header header" "main main" "footer footer"; 
+    grid-template-columns: 50% 50%;
+}
+.header__navegacion {
+    background-color: rgb(20, 212, 30);
+    padding: 5px;
+    margin: 5px;
+}
+.header{
+    grid-area: header;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+
+}
+
+.portada__principal {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.destacado {
+    background-color: rgb(247, 144, 26);
+    text-align: center;
+}
+
+.destaca {
+    background-color: rgb(247, 144, 26);
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+}
+
+.product {
+    display: flex;
+}
+
+.image {
+    flex: 33.33%;
+    padding: 5px;
+    border: 10px solid rgb(20, 212, 30);
+}
+
+.masProductos__boton {
+    padding: 5px;
+    margin: 5px;
+    border: 5px;
+
+}
+
+.direccio {
+    background-color: blue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgb(20, 212, 30);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+a:hover {
+    background: rgba(39, 238, 13, 0.75);
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3em 1.5em;
+    grid-area: main;
+}
+
+.navigation ul {
+    border: 1px solid rgb(20, 212, 30);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    flex-grow: 1;
+    flex: 3;
+}
+
+h3 {
+    text-align: center;
+}
+        nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+.logo img {
+    width: 150px;
+    vertical-align: middle;
+
+}
+
+.logo {
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer {
+    background: rgba(39, 238, 13, 0.75);
+    grid-area: footer;
+}
+}
