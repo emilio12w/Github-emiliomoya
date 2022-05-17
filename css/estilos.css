@@ -26,8 +26,18 @@
     
     li {
         display: inline;
+        transition: 1s ease-in-out;
     
     }
+    
+    li:hover{
+    	transform: scale(2);
+    }
+    
+    @keyframes animacion {
+  from {background-color: red;}
+  to {background-color: green;}
+}
     
     .portada__principal {
         width: 100%;
@@ -167,7 +177,9 @@
     }
     
     .footer {
-        background: rgba(39, 238, 13, 0.75);
+        background-color: red;
+        animation-name: animacion;
+  	animation-duration: 10s;
         grid-area: footer;
     }
 }
@@ -336,7 +348,7 @@ input[type=submit]:hover {
 }
 
 .footer {
-    background: rgba(39, 238, 13, 0.75);
+    background-color: red;
     grid-area: footer;
 }
 }
