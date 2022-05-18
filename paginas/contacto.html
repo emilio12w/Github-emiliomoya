@@ -1,83 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../recursos/favicon-32x32.png">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Contacto-Yerbamundo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Emilio Moya">
+    <meta name="generator" content="">
+    <title>Yerbamate al mundo</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbar-fixed/">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../estilo.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="gridContainer">
-        <div class="header">
-            <header>
-                <nav class="header__navegacion">
-                    <ul>
-                        <a href="../index.html" class="logo">
-                            <img src="https://www.matemundo.co.uk/data/gfx/mask/eng/logo_8_big.png"
-                                alt="freeCodeCamp logo">
-                        </a>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../paginas/historia.html">Historia</a></li>
-                        <li><a href="../paginas/yerba.html">Nosotros</a></li>
-                        <li><a href="../paginas/productos.html">Productos</a></li>
-                        <li><a href="../paginas/contacto.html">Contacto</a></li>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Yerbamate al mundo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Yerba</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                        </li>
                     </ul>
-                </nav>
-            </header>
-        </div>
-        <div class="main">
-            <main>
-                <section>
-                    <h1>Contactenos</h1>
-                    <div class="container">
-                        <form>
-                            <label for="Name">Nombre completo</label>
-                            <div>
-                                <input type="text" id="Name" name="Name" required />
-                            </div>
-                            <form>
-                                <label> Genero </label>
-                                <select>
-                                    <option value="Masculino"> Masculino</option>
-                                    <option value="Femenino"> Femenino</option>
-                                    <option value="No especifica"> No especifica</option>
-                                </select>
-                            </form>
-                            <label for="Email">Email</label>
-                            <div>
-                                <input type="text" id="Email" name="Email" required>
-                            </div>
-                            <div>
-                                <label for="Message">Su mensaje</label>
-                                <div>
-                                    <textarea id="Message" name="Message" rows="10" maxlength="3000"
-                                        required></textarea>
-                                </div>
-                            </div>
-                            <input type="checkbox" id="notificacion" name="notificacion1" value="noti" />
-                            <label for="notificacion"> ¿Desea recibir notificaciones de nuestros productos?</label><br>
-                            <div>
-                                <input type="submit" value="Enviar">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class=" text-center mt-5 ">
+                <h1>Contactenos</h1>
+            </div>
+            <div class="row ">
+                <div class="col-lg-7 mx-auto">
+                    <div class="card mt-2 mx-auto p-4 bg-light">
+                        <div class="card-body bg-light">
+                            <div class="container">
+                                <form id="contact-form" role="form">
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">Nombre</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control"
+                                                        placeholder="Ingrese su primer nombre" required="required"
+                                                        data-error="Primer nombre requerido.">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_lastname">Apellido</label>
+                                                    <input id="form_lastname" type="text" name="surname"
+                                                        class="form-control" placeholder="Ingrese su primer apellido"
+                                                        required="required" data-error="Apellido requerido">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_email">Email *</label>
+                                                    <input id="form_email" type="email" name="email"
+                                                        class="form-control" placeholder="Ingrese su email"
+                                                        required="required" data-error="Email valido es requerido">
 
-                                <input type="submit" value="Eliminar mensaje">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_need">Especifique razón de contacto</label>
+                                                    <select id="form_need" name="need" class="form-control"
+                                                        required="required" data-error="Please specify your need.">
+                                                        <option value="" selected disabled>--Seleccione su motivo--
+                                                        </option>
+                                                        <option>Compra</option>
+                                                        <option>Queja</option>
+                                                    </select>
 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_message">Mensaje</label>
+                                                    <textarea id="form_message" name="message" class="form-control"
+                                                        placeholder="Escriba su mensaje aqui" rows="4"
+                                                        required="required"
+                                                        data-error="Por favor, dejenos un mensaje"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="submit" class="btn btn-success btn-send  pt-2 btn-block
+                                " value="Enviar mensaje">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </section>
-            </main>
+                </div>
+            </div>
         </div>
-        <div class="footer">
-            <footer>
-                <p>Todos los derechos reservaos- Yerba mate al mundo.</p>
-                <p>yerbamatemundo@gmail.com</p>
-            </footer>
-        </div>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Yerbamate al Mundo</span>
+            </div>
+        </footer>
     </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>

@@ -1,71 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../recursos/favicon-32x32.png">
-  <link rel="stylesheet" href="../css/estilos.css">
-  <title>Yerbamundo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Emilio Moya">
+    <meta name="generator" content="">
+    <title>Yerbamate al mundo</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../estilo.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="header__navegacion">
-    <ul>
-      <a href="../index.html" class="logo">
-        <img src="https://www.matemundo.co.uk/data/gfx/mask/eng/logo_8_big.png" alt="freeCodeCamp logo">
-      </a>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../paginas/historia.html">Historia</a></li>
-      <li><a href="../paginas/yerba.html">Nosotros</a></li>
-      <li><a href="../paginas/productos.html">Productos</a></li>
-      <li><a href="../paginas/contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section class="destaca">
-      <h2 >
-        Productos
-      </h2>
-    </section>
-    <section class="portada">
-      <img class="portada__principal" src="https://www.primeraedicion.com.ar/wp-content/uploads/2021/10/09-yerba-mate.jpg" />
-    </section>
-    <section>
-      <section class="productos">
-        <div class="image">
-          <img src="../recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" style="width:100%" />
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Yerbamate al mundo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Yerba</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container bootstrap snipets">
+            <h1 class="text-center text-muted">Catalago de productos</h1>
+            <div class="row flow-offset-1">
+                <div class="col-xs-6 col-md-4">
+                    <div class="product tumbnail thumbnail-3"><a href="#"><img src="../recursos/descarga.jpg"
+                                alt=""></a>
+                        <div class="caption">
+                            <h6><a href="#">Yerba Rosamonte</a></h6><span class="price">
+                                <del>$24.99</del></span><span class="price sale">$12.49</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="product tumbnail thumbnail-3"><a href="#"><img src="../recursos/descarga.jpg"
+                                alt=""></a>
+                        <div class="caption">
+                            <h6><a href="#">Yerba Rosamonte</a></h6><span class="price">
+                                <del>$24.99</del></span><span class="price sale">$12.49</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="product tumbnail thumbnail-3"><a href="#"><img src="../recursos/descarga.jpg"
+                                alt=""></a>
+                        <div class="caption">
+                            <h6><a href="#">Yerba Rosamonte</a></h6><span class="price">
+                                <del>$24.99</del></span><span class="price sale">$12.49</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="product tumbnail thumbnail-3"><a href="#"><img src="../recursos/descarga.jpg"
+                                alt=""></a>
+                        <div class="caption">
+                            <h6><a href="#">Yerba Rosamonte</a></h6><span class="price">
+                                <del>$24.99</del></span><span class="price sale">$12.49</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="product tumbnail thumbnail-3"><a href="#"><img src="../recursos/descarga.jpg"
+                                alt=""></a>
+                        <div class="caption">
+                            <h6><a href="#">Yerba Rosamonte</a></h6><span class="price">
+                                <del>$24.99</del></span><span class="price sale">$12.49</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="product tumbnail thumbnail-3"><a href="#"><img src="../recursos/descarga.jpg"
+                                alt=""></a>
+                        <div class="caption">
+                            <h6><a href="#">Yerba Rosamonte</a></h6><span class="price">
+                                <del>$24.99</del></span><span class="price sale">$12.49</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="image">
-          <img src="../recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" style="width:100%" />
-        </div>
-        <div class="image">
-          <img src="../recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" style="width:100%" />
-        </div>
-        <div class="image">
-          <img src="../recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" style="width:100%" />
-        </div>
-      </section>
-      <section class="product">
-        <div class="image">
-          <img src="../recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" style="width:100%" />
-        </div>
-        <div class="image">
-          <img src="../recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" style="width:100%" />
-        </div>
-        <div class="image">
-          <img src="../recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" style="width:100%" />
-        </div>
-        <div class="image">
-          <img src="../recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" style="width:100%" />
-        </div>
-      </section>
-  </main>
-  <footer>
-    <p>Todos los derechos reservaos- Yerba mate al mundo.</p>
-    <p>yerbamatemundo@gmail.com</p>
-  </footer>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Yerbamate al Mundo</span>
+            </div>
+        </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

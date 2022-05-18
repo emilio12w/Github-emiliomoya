@@ -1,61 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="recursos/favicon-32x32.png">
-  <link rel="stylesheet" href="css/estilos.css">
-  <title>Yerbamundo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Emilio Moya">
+  <meta name="generator" content="">
+  <title>Yerbamate al mundo</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="estilo.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="gridContainer">
-      <header class="header" >
-        <nav class="header__navegacion">
-          <a href="index.html" class="logo">
-            <img src="https://www.matemundo.co.uk/data/gfx/mask/eng/logo_8_big.png" alt="freeCodeCamp logo">
-          </a>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="paginas/historia.html">Historia</a></li>
-            <li><a href="paginas/yerba.html">Nosotros</a></li>
-            <li><a href="paginas/productos.html">Productos</a></li>
-            <li><a href="paginas/contacto.html">Contacto</a></li>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Yerbamate al mundo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Yerba</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="paginas/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="paginas/contacto.html">Contacto</a>
+            </li>
           </ul>
-        </nav>
-      </header>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="recursos/slide1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="recursos/slide2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="recursos/slide3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-      <main class="main" >
-        <section class="portada">
-          <img class="portada__principal" src="recursos/images (3).jpg" />
-        </section>
-        <section class="destacado">
-          <h2 class="destacados__productos">Productos Destacados</h2>
-        </section>
-        <section class="productos">
-          <div class="image">
-            <img src="recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" />
+    
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>Nuestros productos</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            La mejor calidad, siempre</cite>
+          </figcaption>
+        </figure>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="recursos/descarga.jpg", alt="...">
+              <div class="card-body">
+                <p class="card-text">Este producto ofrece al consumidor una alta duración de sabor durante su consumo.
+                  Para obtener este rendimiento es importante tener en cuenta los consejos para preparar un mate.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Mas informacion</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="image">
-            <img src="recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp"  />
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="recursos/descarga.jpg", alt="...">
+              <div class="card-body">
+                <p class="card-text">Este producto ofrece al consumidor una alta duración de sabor durante su consumo.
+                  Para obtener este rendimiento es importante tener en cuenta los consejos para preparar un mate.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Mas informacion</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="image">
-            <img src="recursos/D_NQ_NP_633765-MLA43411180896_092020-O.webp" />
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="recursos/descarga.jpg", alt="...">
+              <div class="card-body">
+                <p class="card-text">Este producto ofrece al consumidor una alta duración de sabor durante su consumo.
+                  Para obtener este rendimiento es importante tener en cuenta los consejos para preparar un mate.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Mas informacion</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-        <section class="masProductos">
-          <div class="masProductos__boton">
-            <button> Ver todos los productos </button>
-          </div>
-        </section>
-      </main>
-      <footer class="footer" >
-        <p>Todos los derechos reservaos- Yerba mate al mundo.</p>
-        <p>yerbamatemundo@gmail.com</p>
-        <p>Maria Lugones 1789, Quilmes, Buenos Aires
-        </p>
-      </footer>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Yerbamate al Mundo</span>
+      </div>
+    </footer>
   </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
