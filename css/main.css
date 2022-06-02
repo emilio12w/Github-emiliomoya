@@ -1,3 +1,18 @@
+.product {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.8em; }
+
+h3 {
+  font-size: 2.5em; }
+
 body {
   min-height: 75rem;
   padding-top: 4.5rem; }
@@ -14,18 +29,14 @@ body {
   .price del {
     color: #b0bec5; }
 
-.product {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto; }
-  .product .caption {
-    margin-top: 15px; }
-    .product .caption h6 {
-      color: #455a64; }
-  .product.tumbnail {
-    box-shadow: 0 5px 25px 0 transparent;
-    transition: 0.3s linear;
-    padding-top: 0; }
-    .product.tumbnail img:hover {
-      box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2); }
+.product .caption {
+  margin-top: 15px; }
+  .product .caption h6 {
+    color: #455a64; }
+
+.product.tumbnail {
+  box-shadow: 0 5px 25px 0 transparent;
+  transition: 0.3s linear;
+  padding-top: 0; }
+  .product.tumbnail img:hover {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2); }
